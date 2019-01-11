@@ -1,0 +1,42 @@
+{
+  "name": "ljk-corrector-electron",
+  "version": "0.0.1",
+  "description": "ljk (lembar jawaban komputer) corrector to automatically grade sheets of ljk",
+  "main": "dist/App.js",
+  "scripts": {
+    "start": "electron dist/App.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --prune=true --out=release-builds",
+    "package-win": "electron-packager . ljk-corrector --overwrite --asar=true --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"CryptoApp\"",
+    "package-linux": "electron-packager . ljk-corrector --overwrite --asar=true --platform=linux --arch=x64 --prune=true --out=release-builds"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^2.1.0",
+    "electron": "4.0.0",
+    "electron-builder": "^20.38.4",
+    "electron-packager": "^13.0.1",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^5.3.2",
+    "typescript": "^3.2.2",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
+    "classnames": "^2.2.6",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-dropzone": "^8.0.3"
+  },
+  "build": {
+    "appId": "gerywahyu.ljkcorrector.id",
+    "mac": {
+      "category": "education"
+    }
+  }
+}

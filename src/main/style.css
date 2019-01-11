@@ -1,0 +1,103 @@
+.dropzone {
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px dashed;
+}
+
+.sidebar {
+    width: 250px;
+    padding: 1em 1em 0 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.items-container {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    min-height: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.preview {
+    flex-grow: 1;
+}
+
+.preview {
+    background-color: #202020;
+}
+
+.download-prompt {
+    padding: 0.5em 1em;
+    margin-right: -1em;
+    margin-left: -1em;
+    cursor: pointer;
+    background-color: #006699;
+    color: white;
+    font-weight: 700;
+}
+
+.full {
+    width: 100%;
+}
+
+.sidebar > *:not(:last-child) {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.basic-text-input {
+    padding: 0.4em;
+}
+
+.items-container {
+    margin: 0.5em -1em 0;
+}
+
+.file-item {
+    padding: 0.4em 1em;
+}
+
+.file-item > * {
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+.file-item:hover {
+    background-color: lightgray;
+}
+
+.file-item.active {
+    color: white;
+    background-color: #202020;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body, #root {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+}
+
+.preview-image {
+    display: inline-block;
+    align-self: center;
+    height: 100%;
+}
